@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{ url_for('index')}}"method = "post">
+    What is your name:<br/>
+    <input type="text" name="name"><br/>
+    What is your quest:<br/>
+    <input type="radio" name="quest" value="Join">I seek the limbus company.<br/>
+    <input type="radio" name="quest" value="oops">I just want to be cracked by a sinner (or dante).<br/>
+    Who is your favorite sinner?<br/>
+    <select name="color">
+        <option value="Join">Yi Sang</option>
+        <option value="Join">Faust</option>
+        <option value="Join">Don Quixote</option>
+        <option value="Join">Ryoshu</option>
+        <option value="Join">Meursault</option>
+        <option value="Join">Hong Lu</option>
+        <option value="Join">Heathcliff</option>
+        <option value="Join">Ishmael</option>
+        <option value="Join">Rodion</option>
+        <option value="Join">Sinclair</option>
+        <option value="Join">Outis</option>
+        <option value="Join">Gregor</option>
+        <option value="oops">js let me crack..</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
